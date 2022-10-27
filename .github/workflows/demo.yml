@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Dependencies
-        run: npm python
+        run: apt install python -y
 
       # Runs a set of commands using the runners shell
       - name: Running python code
