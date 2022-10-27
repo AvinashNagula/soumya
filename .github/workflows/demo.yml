@@ -27,7 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Dependencies
-        run: apt install python -y
+        run: sudo apt update
+        run: sudo apt upgrade
+        run: sudo apt install python -y
+
+
+
 
       # Runs a set of commands using the runners shell
       - name: Running python code
